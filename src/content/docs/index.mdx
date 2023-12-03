@@ -1,36 +1,52 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Concepto AI
+description: Image 
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Design your next website with AI
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/hero.svg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Self Hosted
+      link: /self-hosted
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Cloud Hosted
+      link: /cloud-hosted
+      icon: rocket
+banner:
+  content: |
+    We've just launched Concepto AI v1.0 🚀
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+## Quick Links
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+<CardGrid>
+  <LinkCard title="What is Concepto AI?" href="/about/what-is-concepto" />
+  <LinkCard title="How does Concepto AI work?" href="/about/how-does-concepto-work" />
+</CardGrid>
+
+## Features
+
+<CardGrid>
+	<Card title="Draw your UI" icon="pencil">
+		Using the built-in editor, you can draw your UI and export it as code.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Generate with AI" icon="laptop">
+		Concepto AI uses the latest GPT4-V model to generate code from your image.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Privacy Friendly" icon="open-book">
+		Just the basics, no bloat. It doesn't track you, or store your generations.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Lightweight & Fast" icon="rocket">
+		Concepto AI is built with Next.JS 14 and Tailwind CSS, so it's fast and lightweight.
+	</Card>
+	<Card title="Compatible Code" icon="setting">
+		Concepto AI automatically generates code that is compatible with Tailwind CSS, CDN included.
+	</Card>
+	<Card title="Self Hosted & Cloud Hosting" icon="list-format">
+		Concepto AI is open source and self hosted. You can host it on your own server, or use our cloud hosting.
 	</Card>
 </CardGrid>
