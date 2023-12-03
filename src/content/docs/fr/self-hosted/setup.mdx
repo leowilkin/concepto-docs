@@ -1,0 +1,45 @@
+---
+title: Configuration de l'auto-hébergement
+desc: Configurez votre propre instance auto-hébergée de l'application
+next: false
+---
+:::note
+Vous devez avoir des connaissances techniques pour suivre ce tutoriel. Si ce n'est pas le cas, vous pouvez utiliser la [version hébergée](/fr/cloud-hosted/).
+:::
+
+Si vous êtes sûr de vouloir héberger localement ou sur un serveur, suivez les étapes ci-dessous.
+
+### Prérequis
+- Node 14 ou version ultérieure
+- NPM 7 ou version ultérieure
+- Une [clé API OpenAI](https://platform.openai.com/api-keys)
+- Un IDE ou éditeur de texte de votre choix
+
+### Étapes
+
+1. Ouvrez une nouvelle fenêtre de terminal et accédez au répertoire dans lequel vous souhaitez installer l'application.
+
+2. Clonez le référentiel dans votre terminal.
+
+```bash title="Terminal"
+gh repo clone leowilkin/concepto
+```
+3. Créez et ajoutez votre [clé API OpenAI](https://platform.openai.com/api-keys) dans un nouveau fichier `.env.local`.
+
+```bash title=".env.local"
+OPENAI_API_KEY=sk-************
+```
+4. Installez les dépendances.
+
+```bash title="Terminal"
+npm install
+```
+5. Lancez l'application.
+
+```bash title="Terminal"
+npm run dev
+```
+6. Ouvrez votre navigateur et accédez à http://localhost:3000
+7. Pour arrêter l'application, appuyez sur `CTRL + C` dans votre fenêtre de terminal.
+
+**C'est tout !** Vous pouvez maintenant utiliser l'application en local.
