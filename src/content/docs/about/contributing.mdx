@@ -1,0 +1,148 @@
+---
+title: Contributing
+desc: Learn how to contribute to Concepto or the Docs
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Contributing
+
+We welcome contributions of any size and contributors of any skill level.
+As an open source project, we believe in giving back to our contributors.
+We are happy to help with guidance on PRs, technical writing, and turning any feature idea into a reality.
+
+:::note[Tip for new contributors]
+Take a look at [GitHub's Docs](https://docs.github.com/en/get-started/quickstart/hello-world) for helpful information on working with GitHub.
+:::
+
+> Inspiration for this contributor manual come from @withastro/starlight - the docs page this is hosted on!
+
+## Types of contributions
+
+There are lots of ways to contribute to Concepto AI.
+
+Help writing docs, catching typos and errors, as well as translating docs into other languages is always welcome.
+
+You can also get involved by leaving feedback on [issues](https://github.com/leowilkin/concepto/issues) or reviewing [pull requests](https://github.com/leowilkin/concepto/pulls) by other contributors.
+
+We encourage you to:
+
+- [**Open an issue**](https://github.com/leowilkin/concepto/issues/new) to let us know of bugs in Concepto, documentation you found unclear, or other issues you run into.
+
+- [**Look at existing issues**](https://github.com/leowilkin/concepto/issues).
+
+- **Make a pull request (PR)** to address an open issue or to fix obvious problems.
+  Read more about [making a PR in GitHub’s docs][pr-docs]
+
+- [**Review existing PRs**](https://github.com/leowilkin/concepto/pulls) to help us merge contributions sooner.
+
+- [**Add or update translations**](#translations). We need help translating both Concepto’s UI and documentation.
+
+### Setting up a development environment
+
+You can [develop locally](#developing-locally) or use an online coding development environment like [GitHub Codespaces](#developing-using-github-codespaces) to get started quickly.
+
+#### Developing locally
+
+**Prerequisites:** Developing Concepto AI requires [Node.js](https://nodejs.org/en) (v16 or higher) and [npm](https://npmjs.org/). Make sure you have these installed before following these steps. If you're developing new AI tools, you may need an OpenAI Developer API Key.
+
+1. **Fork Concepto or the Concepto Docs** to your personal GitHub account by clicking <kbd>Fork</kbd> on the project of your choosing.
+  <Tabs>
+      <TabItem label="Concepto">
+        [Concepto AI](https://github.com/leowilkin/concepto)
+      </TabItem>
+      <TabItem label="Concepto Docs">
+        [Concepto Docs](https://github.com/leowilkin/concepto-docs)
+      </TabItem>
+    </Tabs>
+
+2. **Clone your fork** of Concepto to your computer. Replace `YOUR-USERNAME` in the command below with your GitHub username to clone in a Terminal:
+  <Tabs>
+    <TabItem label="Concepto">
+      ```sh
+      git clone https://github.com/YOUR-USERNAME/concepto.git
+      ```
+    </TabItem>
+    <TabItem label="Concepto Docs">
+      ```sh
+      git clone https://github.com/YOUR-USERNAME/concepto-docs.git
+      ```
+    </TabItem>
+  </Tabs>
+
+3. **Change directory** to the cloned repo:
+   
+   <Tabs>
+    <TabItem label="Concepto">
+      ```sh
+      cd concepto
+      ```
+    </TabItem>
+    <TabItem label="Concepto Docs">
+      ```sh
+      cd concepto-docs
+      ```
+    </TabItem>
+  </Tabs>
+
+4. **Install dependencies** with `npm`:
+
+   ```sh
+   npm i
+   ```
+
+#### Developing using GitHub Codespaces
+
+**Create a new codespace** via
+
+  <Tabs>
+      <TabItem label="Concepto">
+        [Create new Concepto Codespace](https://codespaces.new/leowilkin/concepto)
+      </TabItem>
+      <TabItem label="Concepto Docs">
+        [Create new Concepto Docs Codespace](https://codespaces.new/leowilkin/concepto-docs)
+      </TabItem>
+    </Tabs>
+
+The dev container used for GitHub Codespaces can also be used with [other supporting tools](https://containers.dev/supporting), including VS Code.
+
+
+## Testing
+
+### Testing visual changes while you work
+
+Run the dev server on the docs site to see how changes you make impact a project using Concepto.
+
+To do this, open up your terminal, navigate to the root of the project, and then run `pnpm dev`:
+
+```sh
+npm run dev
+```
+
+You should then be able to open <http://localhost:4321> or <http://localhost:3000> and see your changes.
+
+## Translations
+
+Translations help make Concepto Docs accessible to more people.
+
+### Translating Concepto AI's UI
+
+Concepto’s UI comes with some built-in text elements. For example, the `Concepto it`, which needs translating.
+
+### Translating Cin’s docs
+
+Concepto AI’s documentation is also translated into multiple languages. You can find the source code for the site in the `src` folder of this repository.
+
+Help out by:
+
+- Reviewing [open translation PRs]((https://github.com/leowilkin/concepto/pulls)
+- Updating out-of-date translated pages
+- Adding an untranslated page
+
+#### Adding a new language to Concepto’s docs
+
+To add a language, you will need its BCP-47 tag and a label. See [“Adding a new language”](https://github.com/withastro/docs/blob/main/contributor-guides/translating-astro-docs.md#adding-a-new-language) in the Astro docs repo for some helpful tips around choosing these.
+
+- Add your language to the `locales` config in `docs/astro.config.mjs`
+- Create the first translated page for your language.  
+   This must be the Concepto landing page: `docs/src/content/docs/{language}/index.mdx`.
+- Open a pull request on GitHub to add your changes to Concepto Docs!
