@@ -27,7 +27,7 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			social: {
-				github: 'https://github.com/leowilkin/concepto-docs',
+				github: 'https://github.com/leowilkin/concepto',
 				twitter: 'https://twitter.com/concepto_ai',
 			},
 			sidebar: [ 
