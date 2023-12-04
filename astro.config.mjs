@@ -5,6 +5,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Concepto AI',
+			editLink: {
+		        baseUrl: 'https://github.com/leowilkin/concepto-docs/edit/main/',
+		      	},
 			defaultLocale: 'root',
 			locales: {
 			  root: {
