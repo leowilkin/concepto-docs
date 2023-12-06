@@ -9,8 +9,9 @@ export default defineConfig({
 				{
       				tag: 'script',
       				attrs: {
-	        			src: 'https://www.googletagmanager.com/gtag/js?id=G-TXGKN3BY0Z',
-					content: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TXGKN3BY0Z');'
+	        			src: 'https://scripts.withcabin.com/hello.js',
+					async: true,
+					defer: true,
 			      		},
 			    	},
 			],
