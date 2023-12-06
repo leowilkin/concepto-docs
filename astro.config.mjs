@@ -5,6 +5,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Concepto AI',
+			site: 'https://concepto-docs.vercel.app',
 			head: [
 				{
       				tag: 'script',
