@@ -1,0 +1,51 @@
+---
+title: Configura l'auto-ospitazione
+desc: Configura la tua istanza auto-ospitata dell'app.
+next: false
+---
+:::note
+Devi avere conoscenze tecniche per completare questo tutorial. Se non le hai, puoi utilizzare la [hosted version](/cloud-hosted/).
+:::
+
+Se sei sicuro di voler ospitare localmente o su un server, segui i passaggi qui sotto.
+
+### Prerequisiti
+- Node 14 o superiore
+- NPM 7 o superiore
+- Un [OpenAI API key](https://platform.openai.com/api-keys)
+- Un IDE o un editor di testo a tua scelta
+
+### passaggi
+
+1. Apri una nuova finestra del terminale e spostati nella directory in cui desideri installare l'applicazione.
+
+2. Clona il repository nel tuo terminale.
+
+```bash title="Terminal"
+gh repo clone leowilkin/concepto
+```
+3. Crea e aggiungi il tuo [OpenAI API key](https://platform.openai.com/api-keys) a un nuovo `.env.local` file.
+
+```bash title=".env.local"
+OPENAI_API_KEY=sk-************
+```
+4. Installa le dipendenze.
+
+```bash title="Terminal"
+npm install
+```
+5. Avvia l'applicazione.
+
+```bash title="Terminal"
+npm run dev
+```
+6. Apri il tuo browser e vai su http://localhost:3000
+7. Per interrompere l'applicazione, premi CTRL + C nella finestra del terminale.
+
+
+**Hai finito!** Ora puoi utilizzare l'applicazione in locale.
+
+
+
+
+

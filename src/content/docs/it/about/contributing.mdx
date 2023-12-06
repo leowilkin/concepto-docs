@@ -1,0 +1,134 @@
+---
+title: Contribuire
+desc: Apprendi come contribuire a Concepto o alla documentazione.
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Accogliamo contributi di qualsiasi dimensione e da contributori di qualsiasi livello di competenza. 
+Essendo un progetto open source, crediamo nel ricambiare ai nostri contributori.
+ Siamo felici di offrire assistenza per quanto riguarda le richieste di pull (PR), la scrittura tecnica e nel trasformare qualsiasi idea per una funzionalità in realtà.
+
+:::Note[Consiglio per i nuovi contributori]
+Dai un'occhiata ai Documenti di GitHub per informazioni utili su come lavorare con GitHub. [https://docs.github.com/en/get-started/quickstart/hello-world]
+:::
+
+> L'ispirazione per questo manuale per i contributori proviene da @withastro/starlight, la pagina di documentazione su cui è ospitato!
+
+
+## Tipi di contributi
+
+Ci sono molti modi per contribuire a Concepto AI.
+
+L'aiuto nella scrittura della documentazione, nell'individuare errori di battitura e errori, così come la traduzione della documentazione in altre lingue, è sempre benvenuto.
+
+Puoi anche partecipare lasciando feedback su issues o revisionando pull requests di altri contributori. [https://github.com/leowilkin/concepto/issues] [https://github.com/leowilkin/concepto/pulls]
+
+Ti incoraggiamo a:
+
+- [**aprire un problema**] (https://github.com/leowilkin/concepto/issues/new) per farci sapere di bug in Concepto, documentazione poco chiara che hai trovato, o altri problemi con cui ti sei imbattuto.
+
+- [**Dai un'occhiata alle issue esistenti**](https://github.com/leowilkin/concepto/issues).
+
+- **Fai una pull request (PR).** per affrontare un problema aperto o risolvere problemi evidenti.
+  Leggi di più su [come fare una PR nella documentazione di GitHub][pr-docs].
+
+- [**Rivedi le PR esistenti.**](https://github.com/leowilkin/concepto/pulls)per aiutarci a unire le contribuzioni più velocemente.
+
+- [**Aggiungi o aggiorna le traduzioni.**](https://concepto-docs.vercel.app/about/contributing/#translations). Abbiamo bisogno di aiuto nella traduzione sia dell'interfaccia utente di Concepto che della documentazione.
+
+### Configurazione di un ambiente di sviluppo
+
+Puoi sviluppare in locale o utilizzare un ambiente sviluppo online come [Github Codespaces](#developing-using-github-codespaces) per iniziare rapidamente.
+
+#### Sviluppo in locale
+
+**prerequisiti:** Sviluppare Concepto AI richiede [Node.js](https://nodejs.org/en) (v16 o superiore ) e [npm](https://npmjs.org/).Assicurati di averli installati prima di seguire questi passaggi. Se stai sviluppando nuovi strumenti di intelligenza artificiale, potresti aver bisogno di una chiave API per sviluppatori OpenAI.
+
+1. **Fai un fork di Concepto o dei Concepto Docs.** nel tuo account personale di GitHub cliccando <kbd>Fork</kbd> sul progetto che preferisci
+  [Concepto AI](https://github.com/leowilkin/concepto)
+  [Concepto Docs](https://github.com/leowilkin/concepto-docs)
+
+2. **clona il tuo fork** di Concepto sul tuo computer. Sostituisci YOUR-USERNAME nel comando seguente con il tuo nome utente GitHub per clonare da un Terminale:
+
+    Concepto:
+          ```sh
+          git clone `https://github.com/YOUR-USERNAME/concepto.git`
+          ```
+    Concepto Docs:
+          ```sh
+          git clone `https://github.com/YOUR-USERNAME/concepto-docs.git`
+          ```
+
+3. **cambia directory** al repository clonato:
+
+    Concepto:
+          ```sh
+          cd concepto
+          ```
+    Concepto Docs:
+          ```sh
+          cd concepto-docs
+          ```
+
+4. **Installa le dipendenze** con `npm`:
+
+     ```sh
+     npm i
+     ```
+
+#### Sviluppo utilizzando Github Codespaces
+
+**Crea un nuovo codespace** via
+
+  <Tabs>
+      <TabItem label="Concepto">
+        [Create new Concepto Codespace](https://codespaces.new/leowilkin/concepto)
+      </TabItem>
+      <TabItem label="Concepto Docs">
+        [Create new Concepto Docs Codespace](https://codespaces.new/leowilkin/concepto-docs)
+      </TabItem>
+  </Tabs>
+
+il contenitore di sviluppo usato per GitHub Codespaces può [altri strumenti di supporto](https://containers.dev/supporting), inclusi VS Code.
+
+
+## Testing
+
+### Testare modifiche visive durante lo sviluppo
+
+Esegui il server di sviluppo sul sito della documentazione per vedere come le modifiche che apporti influenzano un progetto che utilizza Concepto.
+
+Per farlo, apri il tuo terminale, vai alla root del progetto, quindi esegui pnpm dev:
+
+```sh
+npm run dev
+```
+
+Dovresti essere in grado di aprire <http://localhost:4321> o <http://localhost:3000> e vedere le tue modifiche.
+## Traduzioni
+
+Le traduzioni aiutano a rendere la documentazione di Concepto accessibile a più persone.
+
+### Tradurre l'interfaccia utente di Concepto AI
+
+L'interfaccia utente di Concepto include alcuni elementi di testo incorporati. Ad esempio, il Concepto it, che ha bisogno di essere tradotto.
+
+### Tradurre la documentazione di Concepto AI
+
+La documentazione di Concepto AI è anche tradotta in diverse lingue. Puoi trovare il codice sorgente del sito nella cartella src di questo repository.
+
+Aiuta:
+
+- Revisionando [PR di traduzione aperte](https://github.com/leowilkin/concepto/pulls)
+- Aggiornando le pagine tradotte obsolete
+- Aggiungendo una pagina non tradotta
+
+#### Aggiungere una nuova lingua alla documentazione di Concepto
+
+Per agiungere una lingua,avrai bisogno del suo tag BCP-47 e di un'etichetta. Vedi [“Adding a new language”](https://github.com/withastro/docs/blob/main/contributor-guides/translating-astro-docs.md#adding-a-new-language) nel repository delle documentazioni di Astro per alcuni utili consigli su come scegliere quest.
+
+-aggiungi la tua lingua alla configurazione `locales` in `docs/astro.config.mjs`
+- Crea la prima pagina tradotta per la tua lingua
+   Questo deve essere la pagina principale di concepto: `docs/src/content/docs/{language}/index.mdx`.
+- Apri una pull request su GitHub per aggiungere le tue modifiche alla documentazione di Concepto!
