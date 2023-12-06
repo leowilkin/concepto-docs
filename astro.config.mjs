@@ -14,6 +14,13 @@ export default defineConfig({
 					defer: true,
 			      		},
 			    	},
+				{
+				tag: 'meta',
+				attrs: {
+					name: 'google-site-verification'
+					content: '8tx08dWFjBU-bY-VH7xm2Ug4ah3oL75_vuU5ORW-gjU',
+					},
+				},
 			],
 			editLink: {
 		        baseUrl: 'https://github.com/leowilkin/concepto-docs/edit/main/',
