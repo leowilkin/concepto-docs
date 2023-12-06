@@ -1,5 +1,7 @@
 # Concepto AI Docs
 
+Thanks to all our supporters!
+
 Privacy with [Cabin](https://withcabin.com/privacy/concepto-docs.vercel.app)
 
 | Command                   | Action                                           |
