@@ -5,6 +5,15 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Concepto AI',
+			head: [
+				{
+      				tag: 'script',
+      				attrs: {
+	        			src: 'https://www.googletagmanager.com/gtag/js?id=G-TXGKN3BY0Z',
+					content: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TXGKN3BY0Z');'
+			      		},
+			    	},
+			],
 			editLink: {
 		        baseUrl: 'https://github.com/leowilkin/concepto-docs/edit/main/',
 		      	},
