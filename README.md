@@ -2,6 +2,8 @@
 
 Thanks to all our supporters!
 
+![Lighthouse](lighthouse.png)
+
 Privacy with [Cabin](https://withcabin.com/privacy/concepto-docs.vercel.app)
 
 | Command                   | Action                                           |
