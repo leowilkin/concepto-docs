@@ -1,5 +1,7 @@
 # Concepto AI Docs
 
+Privacy with [Cabin](https://withcabin.com/privacy/concepto-docs.vercel.app)
+
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
