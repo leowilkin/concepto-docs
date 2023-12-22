@@ -11,10 +11,18 @@ export default defineConfig({
       				tag: 'script',
       				attrs: {
 	        			src: 'https://scripts.withcabin.com/hello.js',
-					async: true,
-					defer: true,
+						async: true,
+						defer: true,
 			      		},
-			    	},
+			    },
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://eu.umami.is/script.js',
+						async: true,
+						content: 'c311aadc-0654-4f4a-91ef-52b258ce909f',
+					},
+				},
 				{
 				tag: 'meta',
 				attrs: {
