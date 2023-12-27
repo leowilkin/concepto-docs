@@ -59,7 +59,8 @@ export default defineConfig({
 				github: 'https://github.com/concepto-ai',
 				twitter: 'https://twitter.com/concepto_ai',
 			},
-			sidebar: [ 
+			sidebar: [
+				{ label: 'Status', link: 'https://status.conceptoai.app' },
 				{
 					label: 'About',
 					autogenerate: { directory: 'about' },
