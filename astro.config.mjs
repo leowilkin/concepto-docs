@@ -86,6 +86,11 @@ export default defineConfig({
 						'fr-FR': 'Hébergement Cloud'
 					},
 				},
+				{
+					label: 'Policies',
+					autogenerate: { directory: 'policies' },
+					collapsed: true,
+				},
 			],
 		}),
 	],
