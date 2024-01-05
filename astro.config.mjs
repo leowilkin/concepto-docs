@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import overrideIntegration from "./src/overrideIntegration.mjs";
 
 export default defineConfig({
 	site: 'https://concepto-docs.vercel.app',
 	integrations: [
+		overrideIntegration(),
 		starlight({
 			title: 'Concepto AI',
 			head: [
