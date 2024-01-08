@@ -13,6 +13,7 @@
     "@astrojs/starlight": "^0.14.0",
     "astro": "^3.2.3",
     "astro-embed": "^0.6.1",
+    "astro-feelback": "^0.3.4",
     "sharp": "^0.32.5"
   }
 }

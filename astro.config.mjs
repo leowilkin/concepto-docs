@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import overrideIntegration from "./src/overrideIntegration.mjs";
 
 export default defineConfig({
 	site: 'https://concepto-docs.vercel.app',
 	integrations: [
+		overrideIntegration(),
 		starlight({
 			title: 'Concepto AI',
 			head: [
@@ -11,10 +13,18 @@ export default defineConfig({
       				tag: 'script',
       				attrs: {
 	        			src: 'https://scripts.withcabin.com/hello.js',
-					async: true,
-					defer: true,
+						async: true,
+						defer: true,
 			      		},
-			    	},
+			    },
+				{
+					tag: 'script',
+					attrs: {
+						src: 'https://eu.umami.is/script.js',
+						async: true,
+						content: 'c311aadc-0654-4f4a-91ef-52b258ce909f',
+					},
+				},
 				{
 				tag: 'meta',
 				attrs: {
@@ -48,10 +58,11 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			social: {
-				github: 'https://github.com/leowilkin/concepto',
+				github: 'https://github.com/concepto-ai',
 				twitter: 'https://twitter.com/concepto_ai',
 			},
-			sidebar: [ 
+			sidebar: [
+				{ label: 'Status', link: 'https://status.conceptoai.app' },
 				{
 					label: 'About',
 					autogenerate: { directory: 'about' },
@@ -76,6 +87,11 @@ export default defineConfig({
 					translations: {
 						'fr-FR': 'Hébergement Cloud'
 					},
+				},
+				{
+					label: 'Policies',
+					autogenerate: { directory: 'policies' },
+					collapsed: true,
 				},
 			],
 		}),
