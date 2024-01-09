@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 import overrideIntegration from "./src/overrideIntegration.mjs";
 
 export default defineConfig({
-	site: 'https://concepto-docs.vercel.app',
+	site: 'https://conceptoai.app',
 	integrations: [
 		overrideIntegration(),
 		starlight({
@@ -12,7 +12,7 @@ export default defineConfig({
 				{
       				tag: 'script',
       				attrs: {
-	        			src: 'https://scripts.withcabin.com/hello.js',
+	        			src: 'https://analytics.conceptoai.app/hello.js',
 						async: true,
 						defer: true,
 			      		},
