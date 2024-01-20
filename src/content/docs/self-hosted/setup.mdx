@@ -1,4 +1,45 @@
 ---
-title: WIP
+title: Set up Self Hosted
+desc: Set up your oen self hosted instance of the app
+next: false
 ---
-WIP
+:::note
+You must have technical knowledge to complete this tutorial. If you don't, you can use the [hosted version](/cloud-hosted/).
+:::
+
+If you are sure you want to host locally or on a server, follow the steps below.
+
+### Prerequisites
+- Node 14 or higher
+- NPM 7 or higher
+- An [OpenAI API key](https://platform.openai.com/api-keys)
+- An IDE or text editor of your choice
+
+### Steps
+
+1. Open up a new terminal window, and CD to the directory you want to install the app in.
+
+2. Clone the repository in your terminal.
+
+```bash title="Terminal"
+gh repo clone concepto-ai/app
+```
+3. Create & add your [OpenAI API key](https://platform.openai.com/api-keys) to a new `.env.local` file.
+
+```bash title=".env.local"
+OPENAI_API_KEY=sk-************
+```
+4. Install dependencies.
+
+```bash title="Terminal"
+npm install
+```
+5. Start the app.
+
+```bash title="Terminal"
+npm run dev
+```
+6. Open up your browser and go to http://localhost:3000
+7. To stop the app, press `CTRL + C` in your terminal window.
+
+**You're done!** You can now use the app locally.
