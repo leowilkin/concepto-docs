@@ -1,0 +1,54 @@
+---
+title: Concepto AI
+description: Progetta il tuo prossimo sito web con l'intelligenza artificiale.
+template: splash
+hero:
+  tagline:Progetta il tuo prossimo sito web con l'intelligenza artificiale.
+  image:
+    file: ../../assets/hero.svg
+  actions:
+    - text: Informazioni
+      link: /about/what-is-concepto
+      icon: right-arrow
+      variant: primary
+    - text: Inizia
+      link: /about/get-started
+      icon: rocket
+banner:
+  content: |
+    Abbiamo appena lanciato Concepto AI v1.0. 🚀
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Quick Links
+
+<CardGrid>
+  <LinkCard title="Cos'è Concepto AI?" href="/about/what-is-concepto" />
+  <LinkCard title="Come funziona Concepto AI?" href="/about/how-does-concepto-work" />
+  <LinkCard title="Auto-ospitaggio" href="/self-hosted" />
+  <LinkCard title="Ospitato su cloud" href="/cloud-hosted/" />
+</CardGrid>
+
+## Features
+
+<CardGrid>
+	<Card title="Disegna la tua interfaccia utente" icon="pencil">
+		Utilizzando l'editor integrato, puoi disegnare la tua interfaccia utente e esportarla come codice.
+	</Card>
+	<Card title="Generare con l'AI" icon="laptop">
+		Concepto AI utilizza l'ultimo modello GPT4-V per generare codice dalla tua immagine.
+	</Card>
+	<Card title="Rispettoso della privacy" icon="open-book">
+		solo le basi, senza sovraccarico. Non traccia né memorizza le tue generazioni.
+	</Card>
+	<Card title="Leggero e veloce" icon="rocket">
+		Concepto AI is built with Next.JS 14 and Tailwind CSS, so it's fast and lightweight.
+	</Card>
+	<Card title="Codice compatibile" icon="setting">
+		Concepto AI genera automaticamente codice compatibile con Tailwind CSS, incluso il CDN.
+	</Card>
+	<Card title="Auto-ospitato e hosting su cloud" icon="list-format">
+		Concepto AI è open source e auto-ospitato. Puoi ospitarlo sul tuo server o utilizzare il nostro hosting cloud.
+	</Card>
+</CardGrid>

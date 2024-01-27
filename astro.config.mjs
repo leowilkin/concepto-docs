@@ -46,6 +46,10 @@ export default defineConfig({
 				label: 'Français',
 				lang: 'fr-FR',
 			  },
+			  'it': {
+				label: 'Italiano'
+				lang: 'it-IT'
+			  },
 			},
 			lastUpdated: true,
 			favicon: '/favicon.svg',
@@ -68,7 +72,8 @@ export default defineConfig({
 					autogenerate: { directory: 'about' },
 					collapsed: true,
 					translations: {
-						'fr-FR': 'À propos de'
+						'fr-FR': 'À propos de',
+						'it-IT': 'Translation in Progress'
 					},
 				},
 				{
@@ -76,7 +81,9 @@ export default defineConfig({
 					autogenerate: { directory: 'self-hosted' },
 					collapsed: true,
 					translations: {
-						'fr-FR': 'Auto-hébergé'
+						'fr-FR': 'Auto-hébergé',
+						'it-IT': 'Translation in Progress'
+
 					},
 				},
 				{
@@ -85,7 +92,9 @@ export default defineConfig({
 					badge: 'BETA',
 					collapsed: true,
 					translations: {
-						'fr-FR': 'Hébergement Cloud'
+						'fr-FR': 'Hébergement Cloud',
+						'it-IT': 'Translation in Progress'
+
 					},
 				},
 				{
