@@ -16,13 +16,13 @@ export default defineConfig({
 						async: true,
 						defer: true,
 			      		},
-			    },
+			    	},
 				{
-					tag: 'script',
-					attrs: {
-						src: 'https://eu.umami.is/script.js',
-						async: true,
-						content: 'c311aadc-0654-4f4a-91ef-52b258ce909f',
+				tag: 'script',
+				attrs: {
+					src: 'https://eu.umami.is/script.js',
+					async: true,
+					content: 'c311aadc-0654-4f4a-91ef-52b258ce909f',
 					},
 				},
 				{
@@ -30,6 +30,13 @@ export default defineConfig({
 				attrs: {
 					name: 'google-site-verification',
 					content: '8tx08dWFjBU-bY-VH7xm2Ug4ah3oL75_vuU5ORW-gjU',
+					},
+				},
+				{
+				tag: 'script',
+				attrs: 	{
+					type: 'text',
+					content: 'window.$crisp=[];window.CRISP_WEBSITE_ID="1009217c-3ca9-4875-8078-cabc010d0f3a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();',
 					},
 				},
 			],
